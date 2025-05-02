@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #d0f0f6, #e0f7fa);
+    color: #1e3a5f;
+    overflow-x: hidden;
+  }
+  
+  #intro {
+    display: flex;
+    flex-direction: column; /* add this line */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0f172a;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  
+  #main-content {
+    display: none;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 1.2s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #0f766e;
+    text-align: center;
+  }
+  
+  .slogan {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #334155;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    background: #ffffffd9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  input, select, button {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+  }
+  
+  button {
+    background-color: #0f766e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0e5e5e;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #64748b;
+  }
+  
+  /* Audio player style */
+  #audio-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #audio-player audio {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  
+  #timestamp {
+    font-size: 1rem;
+    color: #334155;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 600px) {
+    #audio-player {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zen-Sphere</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="intro">
+    <p>Loading Zen-Sphere Experience...</p>
+    <p style="font-size: smaller;">Developed by Mayank Tiwary!</p>
+  </div>
+
+  <div id="main-content">
+    <header>
+      <h1>Zen-Sphere</h1>
+      <p class="slogan">Step in. Breathe Deep. Leave Stress Behind.</p>
+    </header>
+
+    <section>
+      <h2>Book a Session</h2>
+      <form id="booking-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" required />
+
+        <label for="experience">Choose Experience:</label>
+        <select id="experience" required>
+          <option value="forest">Dancing Piano</option>
+          <option value="ocean">Soothing Rain</option>
+          <option value="space">Space Float</option>
+          <option value="mountain">Mountain Breeze</option>
+        </select>
+
+        <button type="submit">Book Now</button>
+      </form>
+      <p id="confirmation"></p>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section id="audio-player-section" style="display:none;">
+      <h3>Demo Session</h3>
+      <div id="audio-player">
+        <audio id="audio" controls>
+          <source src="" type="audio/mp3">
+        </audio>
+        <div id="timestamp">00:00 / 00:00</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Zen-Sphere Wellness</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
